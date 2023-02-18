@@ -16,8 +16,7 @@ function draw(){
             document.getElementById('status').innerHTML ='status : object detceted';
            
             fill('red');
-            percent = floor(object[i].confidence * 100);
-            text(object[i].label+" "+percent+'%',object[i].x ,object[i].y);
+            text(object[i].label,object[i].x ,object[i].y);
             noFill();
             stroke("red");
             rect(object[i].x ,object[i].y ,object[i].width, object[i].height);
